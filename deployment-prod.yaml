@@ -11,7 +11,7 @@ spec:
     - ReadWriteMany
   nfs:
     path:  /srv/nfs/alexanmf         #local reference
-    server: 10.48.10.140
+    server: 10.48.10.148
   persistentVolumeReclaimPolicy: Retain
 ---
 apiVersion: v1
@@ -63,7 +63,7 @@ metadata:
   name: flask-prod-service
 spec:
   type: LoadBalancer 
-  loadBalancerIP: 10.48.10.227                                     
+  loadBalancerIP: 10.48.10.148                                     
   ports:
   - protocol: TCP
     port: 80
